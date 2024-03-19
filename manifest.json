@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "SubCopy",
+  "version": "1.0.0",
+  "description": "Copies the titles of ATC Jira subtasks to the clipboard",
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://atc.bmwgroup.net/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardWrite"
+  ]
+}
